@@ -1,9 +1,9 @@
 #!/bin/bash -eu
 
 title="$1"
-message="$2 from $ip / $ptr"
 ip=$(curl -s icanhazip.com)
 ptr=$(curl -s icanhazptr.com)
+message="$2 from $ip / $ptr"
 
 function send_pushover () {
   log "Sending Pushover message."
