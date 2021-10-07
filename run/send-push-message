@@ -3,7 +3,8 @@
 title="$1"
 ip=$(curl -s icanhazip.com)
 ptr=$(curl -s icanhazptr.com)
-message="$2 from $ip / $ptr"
+essid=$(wconfig 2>/dev/null |grep ESSID | cut -d: -f2)
+message="$2 from $ip / $ptr on $essid"
 
 function send_pushover () {
   log "Sending Pushover message."
