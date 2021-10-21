@@ -3,7 +3,7 @@
 title="$1"
 ip=$(curl -s icanhazip.com)
 ptr=$(curl -s icanhazptr.com)
-essid=$(iwgetid -r)
+essid=$(/usr/sbin/iwgetid -r)
 message="$2 from $ip / $ptr on $essid"
 
 function send_pushover () {
