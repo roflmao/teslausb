@@ -132,7 +132,7 @@ If you'd like to receive a notification when your Pi finishes archiving clips fo
 
 ### Optional: Configure a hostname
 
-The default network hostname for the Pi will become `teslausb`.  If you want to have more than one TeslaUSB devices on your network (for example you have more than one Tesla in your houseold), then you can specify an alternate hostname for the Pi by running this command:
+The default network hostname for the Pi will become `teslausb`.  If you want to have more than one TeslaUSB devices on your network (for example you have more than one Tesla in your household), then you can specify an alternate hostname for the Pi by running this command:
 
 ```
  export TESLAUSB_HOSTNAME=<new hostname>
@@ -140,7 +140,7 @@ The default network hostname for the Pi will become `teslausb`.  If you want to 
 
 For example, you could use `export TESLAUSB_HOSTNAME=teslausb-ModelX`
 
-Make sure that whatever you speicfy for the new hostname is compliant with the rules for DNS hostnames; for example underscore (_) is not allowed, but dash (-) is allowed.  Full rules are in RFC 1178 at https://tools.ietf.org/html/rfc1178
+Make sure that whatever you specify for the new hostname is compliant with the rules for DNS hostnames; for example underscore (_) is not allowed, but dash (-) is allowed.  Full rules are in RFC 1178 at https://tools.ietf.org/html/rfc1178
 
 ### Set up the USB storage functionality
 
